@@ -2,58 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
-        main {
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .about, .projects, .skills, .contact {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project-item, .skill-item {
+            margin-bottom: 20px;
+        }
+        .project-item h3 {
+            margin: 0;
+        }
+        .project-item p, .skill-item p {
+            margin: 10px 0 0;
         }
         footer {
+            text-align: center;
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
         }
-        h1 {
-            color: #333;
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Simple Page</h1>
-    </header>
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a basic HTML page template with some simple styling. You can customize it as per your needs.</p>
-        
-        <h2>Features</h2>
-        <ul>
-            <li>Clean and minimal design</li>
-            <li>Responsive layout</li>
-            <li>Customizable styles</li>
-        </ul>
-    </main>
+<div class="container">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m a [Your Job Title] with experience in [mention key technologies]. I love building creative solutions and am always eager to take on new challenges.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Simple Page</p>
-    </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+            <h3>Project 1: [Project Name]</h3>
+            <p>Description of the project. Include what technologies you used and any notable achievements in this project.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Project 2: [Project Name]</h3>
+            <p>Description of the project. Include what technologies you used and any notable achievements in this project.</p>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">
+            <h3>Skill 1: [Technology/Tool]</h3>
+            <p>Details about your proficiency or experience with this skill.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Skill 2: [Technology/Tool]</h3>
+            <p>Details about your proficiency or experience with this skill.</p>
+        </div>
+
+        <!-- Add more skills as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to get in touch, feel free to reach out via email at: <strong>[Your Email]</strong></p>
+        <p>You can also find me on LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">[Your LinkedIn Name]</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
